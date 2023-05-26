@@ -15,7 +15,7 @@ class BasicUploadRequest extends Request implements HasBody
     use HasMultipartBody;
     protected Method $method = Method::POST;
 
-    public function __construct(private string $routeName, private $file, private string $path) {}
+    public function __construct(private string $routeName) {}
 
     protected function defaultHeaders(): array {
         return [
