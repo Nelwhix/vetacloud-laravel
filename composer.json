@@ -1,6 +1,6 @@
 {
     "name": "nelwhix/vetacloud-laravel",
-    "description": "package to fluently interact with vetacloud's API",
+    "description": "PHP package to fluently interact with vetacloud's API",
     "type": "library",
     "license": "MIT",
     "autoload": {

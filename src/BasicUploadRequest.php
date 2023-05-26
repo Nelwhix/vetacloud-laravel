@@ -5,7 +5,7 @@ namespace Nelwhix\VetacloudLaravel;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
-class BasicUploadRequest
+class BasicUploadRequest extends Request
 {
     protected Method $method = Method::POST;
 
@@ -17,4 +17,8 @@ class BasicUploadRequest
         ];
     }
 
+    public function resolveEndpoint(): string
+    {
+        return "";
+    }
 }
