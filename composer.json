@@ -14,5 +14,7 @@
             "email": "nelsonisioma1@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "sammyjo20/saloon": "^2.0"
+    }
 }
