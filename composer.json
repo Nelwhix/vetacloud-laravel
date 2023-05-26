@@ -1,5 +1,5 @@
 {
-    "name": "nelwhix/vetacloud-laravel",
+    "name": "nelwhix/vetacloud-php",
     "description": "PHP package to fluently interact with vetacloud's API",
     "type": "library",
     "license": "MIT",
