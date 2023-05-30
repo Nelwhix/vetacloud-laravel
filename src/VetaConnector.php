@@ -1,6 +1,6 @@
 <?php
 
-namespace Nelwhix\VetacloudLaravel;
+namespace Nelwhix\VetacloudPhp;
 
 class VetaConnector extends \Saloon\Http\Connector
 {
@@ -9,7 +9,7 @@ class VetaConnector extends \Saloon\Http\Connector
     }
     public function resolveBaseUrl(): string
     {
-        return "https://cloud.vetacloud.com/node";
+        return "http://3.81.11.234:8000/php";
     }
 
     protected function defaultHeaders(): array

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nelwhix\VetacloudLaravel;
+namespace Nelwhix\VetacloudPhp;
 
 
 use Saloon\Contracts\Body\BodyRepository;
