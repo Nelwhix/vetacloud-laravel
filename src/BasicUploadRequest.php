@@ -8,10 +8,11 @@ use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Traits\Body\HasJsonBody;
+use Saloon\Traits\Body\HasMultipartBody;
 
 class BasicUploadRequest extends Request implements HasBody
 {
-    use HasJsonBody;
+    use HasMultipartBody;
     protected Method $method = Method::POST;
 
     public function __construct(private string $routeName) {}
