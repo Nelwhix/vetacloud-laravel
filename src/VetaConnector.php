@@ -9,7 +9,7 @@ class VetaConnector extends \Saloon\Http\Connector
     }
     public function resolveBaseUrl(): string
     {
-        return "http://3.81.11.234:8000/php";
+        return "https://8abd-102-89-47-35.ngrok-free.app/php";
     }
 
     protected function defaultHeaders(): array
