@@ -3,16 +3,14 @@
 namespace Nelwhix\VetacloudPhp;
 
 
-use Saloon\Contracts\Body\BodyRepository;
-use Saloon\Contracts\Body\HasBody;
+use Saloon\Contracts\Body\HasBody as HasBodyContract;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
-use Saloon\Traits\Body\HasMultipartBody;
+use Saloon\Traits\Body\HasBody;
 
-class BasicUploadRequest extends Request implements HasBody
+class BasicUploadRequest extends Request implements HasBodyContract
 {
-    use HasMultipartBody;
+    use HasBody;
     protected Method $method = Method::POST;
 
     public function __construct(private string $routeName) {}
